@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import HomePage from './components/HomePage'
 import AboutPage from './components/AboutPage'
 import Contact from './components/Contact'
@@ -19,6 +20,7 @@ const App: FC = () => (
         </Routes>
       </main>
     </div>
+    <Analytics />
   </Router>
 )
 
